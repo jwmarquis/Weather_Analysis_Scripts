@@ -12,28 +12,18 @@ dependencies:
   - gzip
   - shutil
   - netCDF4
-  - cartopy.crs
-  - cartopy.feature
-  - cartopy.io.shapereader
-  - matplotlib.pyplot
-  - matplotlib.colors
-  - matplotlib.cm
+  - cartopy
+  - matplotlib
   - pandas
-  - metpy.calc
-  - metpy.plots
-  - metpy.plots.wx_symbols
-  - metpy.units
-  - metpy.io
-  - metpy.plots.declarative
+  - metpy
   - boto3
   - botocore
-  - botocore.config
+  - botocore
   - os
   - xarray
-  - xarray.backends
   - math
-  - siphon.catalog
+  - siphon
   - multiprocessing
   - requests
   - sys
-  - scipy.ndimage
+  - scipy

@@ -11,6 +11,7 @@ def get_rap_dataset(dt: datetime = datetime.utcnow().replace(microsecond=0,secon
     try:
         base_url = 'https://www.ncei.noaa.gov/thredds/catalog/model-rap130anl/'
         cat = TDSCatalog(f'{base_url}{dt:%Y%m}/{dt:%Y%m%d}/catalog.xml')
+        print(f'{base_url}{dt:%Y%m}/{dt:%Y%m%d}/catalog.xml')
         ds = cat.datasets.filter_time_range(dt,dt+timedelta(hours=0))[-1]
         ncss = ds.subset()
         print(ncss)
